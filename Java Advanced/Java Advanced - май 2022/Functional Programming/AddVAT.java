@@ -11,7 +11,7 @@ public class AddVAT {
 
         Consumer<Double> printer = d -> System.out.printf("%.2f%n", d);
 
-        System.out.println("Price with VAT:");
+        System.out.println("Prices with VAT:");
 
         Arrays.stream(scanner.nextLine().split(", "))
                 .map(Double::parseDouble)
