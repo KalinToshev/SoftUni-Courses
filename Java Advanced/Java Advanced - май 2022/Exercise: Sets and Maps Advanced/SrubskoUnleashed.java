@@ -42,7 +42,7 @@ public class SrubskoUnleashed {
             System.out.println(k);
             v.entrySet().stream()
                     .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
-                    .forEach(s -> System.out.println("# " + s.getKey() + " -> " + s.getValue()));
+                    .forEach(s -> System.out.println("#  " + s.getKey() + " -> " + s.getValue()));
         });
     }
 }
