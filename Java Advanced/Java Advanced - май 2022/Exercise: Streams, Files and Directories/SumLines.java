@@ -18,5 +18,6 @@ public class SumLines {
             System.out.println(sum);
             line = bufferedReader.readLine();
         }
+        bufferedReader.close();
     }
 }
