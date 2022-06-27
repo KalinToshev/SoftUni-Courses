@@ -10,10 +10,6 @@ public class StudentSystem {
         this.students = new HashMap<>();
     }
 
-    public Map<String, Student> getStudents() {
-        return this.students;
-    }
-
     //The received command is checked and executed
     public void executeCommand(String[] commandParts) {
         String commandName = commandParts[0];
