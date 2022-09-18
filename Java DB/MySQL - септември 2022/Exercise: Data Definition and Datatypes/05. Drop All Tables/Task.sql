@@ -1,1 +1,1 @@
-
+DROP TABLE `minions`, `towns`;
