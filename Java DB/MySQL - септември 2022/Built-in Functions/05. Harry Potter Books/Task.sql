@@ -1,4 +1,2 @@
-SELECT `title`
-FROM `books`
-WHERE UPPER(SUBSTRING(`title`, 1, 5)) = "HARRY"
-ORDER BY `id`;
+SELECT `title` FROM `books`
+WHERE `title` LIKE 'Harry Potter%';
