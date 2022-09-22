@@ -1,1 +1,4 @@
-
+SELECT `country_name`, `population` from `countries`
+WHERE `continent_code` = "EU"
+ORDER BY `population` DESC, `country_name`
+LIMIT 30;
