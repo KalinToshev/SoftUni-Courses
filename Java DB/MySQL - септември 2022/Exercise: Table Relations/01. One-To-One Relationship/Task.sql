@@ -14,7 +14,7 @@ CREATE TABLE `people` (
 `first_name` VARCHAR(45),
 `salary` DECIMAL(9 , 2 ),
 `passport_id` INT UNIQUE,
-CONSTRAINT fk_pe_pa 
+CONSTRAINT `fk_pe_pa` 
 FOREIGN KEY (`passport_id`)
 REFERENCES `passports` (`passport_id`)
 );
