@@ -1,3 +1,5 @@
+DELIMITER $$
+
 CREATE FUNCTION `udf_actor_history_movies_count`(full_name VARCHAR(50))
 RETURNS INT
 DETERMINISTIC
@@ -19,4 +21,6 @@ GROUP BY `ma`.`actor_id`
 
 RETURN `history_movies`;
 
-END
+END $$
+
+DELIMITER ;
