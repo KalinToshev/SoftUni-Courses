@@ -8,8 +8,6 @@ public class GetVillainsNames {
             " GROUP BY mv.villain_id" +
             " HAVING minions_count > ?" +
             " ORDER BY minions_count DESC";
-
-    private static final String columnLabelName = "name";
     private static final String columnLabelMinionsCount = "minions_count";
 
     private static final String printFormat = "%s %d%n";
@@ -23,7 +21,7 @@ public class GetVillainsNames {
         final ResultSet resultSet = statement.executeQuery();
 
         while (resultSet.next()) {
-            final String villainName = resultSet.getString(columnLabelName);
+            final String villainName = resultSet.getString(Constants.columnLabelName);
             final int minionsCount = resultSet.getInt(columnLabelMinionsCount);
 
             System.out.printf(printFormat, villainName, minionsCount);
