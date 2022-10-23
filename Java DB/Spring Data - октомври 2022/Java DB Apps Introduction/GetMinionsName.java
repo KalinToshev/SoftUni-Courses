@@ -15,7 +15,7 @@ public class GetMinionsName {
 
     private static final String VILLAIN_FORMAT = "Villain: %s%n";
 
-    private static final String MINION_FORMAT = "%d. %s %d";
+    private static final String MINION_FORMAT = "%d. %s %d%n";
 
     private static final String COLUMN_LABEL_AGE = "age";
 
@@ -48,7 +48,7 @@ public class GetMinionsName {
 
         final ResultSet minionsSet = minionsStatement.executeQuery();
 
-        for (int index = 0; minionsSet.next(); index++) {
+        for (int index = 1; minionsSet.next(); index++) {
             final String minionName = minionsSet.getString(Constants.columnLabelName);
             final int minionAge = minionsSet.getInt(COLUMN_LABEL_AGE);
 
