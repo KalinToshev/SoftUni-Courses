@@ -49,4 +49,9 @@ public class Address {
     public void setEmployees(Set<Employee> employees) {
         this.employees = employees;
     }
+
+    @Override
+    public String toString() {
+        return text + ", " + town.getName() + ", " + employees.size();
+    }
 }
