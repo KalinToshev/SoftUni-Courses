@@ -11,6 +11,9 @@
     <modules>
         <module>GringottsDatabase</module>
         <module>SalesDatabase</module>
+        <module>UniversitySystem</module>
+        <module>HospitalDatabase</module>
+        <module>BillsPaymentSystem</module>
     </modules>
 
     <properties>
