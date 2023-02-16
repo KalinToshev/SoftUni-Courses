@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{/fragments/head}">
+</head>
+
+<body>
+
+<div>
+    <nav th:replace="~{/fragments/navigation}"></nav>
+</div>
+
+<div class="container">
+    <h2 class="text-center text-white">Login</h2>
+    <form class="main-form mx-auto col-md-8 d-flex flex-column justify-content-center"
+          method="POST">
+        <div class="form-group">
+            <label class="text-white font-weight-bold" for="username">Username</label>
+            <input class="form-control" id="username" max="50" min="2" name="username" placeholder="Username"
+                   type="text"
+                   value="username"/>
+        </div>
+        <div class="form-group">
+            <label class="text-white font-weight-bold" for="password">Password</label>
+            <input class="form-control" id="password" max="20" min="2" name="password"
+                   placeholder="Password" type="password"
+                   value="password"/>
+
+        </div>
+
+        <p class="errors alert alert-danger">
+            Invalid username or password.
+        </p>
+
+        <div class="row">
+            <div class="col col-md-4">
+                <div class="button-holder d-flex">
+                    <input class="btn btn-info btn-lg" type="submit" value="Submit Offer"/>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div>
+    <footer></footer>
+</div>
+</body>
+</html>

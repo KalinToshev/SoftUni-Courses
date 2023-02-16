@@ -1,0 +1,92 @@
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top" th:fragment="navigation">
+  <a class="navbar-brand"
+     th:href="@{/}">
+    <img alt="car picture"
+         class="logo"
+         src="/img/car.png">
+  </a>
+  <button aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          class="navbar-toggler"
+          data-target="#navbarSupportedContent"
+          data-toggle="collapse"
+          type="button">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse"
+       id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto col-12 justify-content-between">
+      <li class="nav-item">
+        <a class="nav-link"
+           th:href="@{/brands/all}">
+          All Brands
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"
+           th:href="@{/offers/add}">
+          Add Offer
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"
+           th:href="@{/offers/all}">
+          All Offers
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a aria-expanded="false"
+           aria-haspopup="true"
+           class="nav-link dropdown-toggle"
+           data-toggle="dropdown"
+           th:href="@{/}"
+           id="navbarDropdown"
+           role="button">
+          Admin
+        </a>
+        <div aria-labelledby="navbarDropdown"
+             class="dropdown-menu">
+          <a class="dropdown-item"
+             th:href="@{/}">
+            Action
+          </a>
+          <a class="dropdown-item"
+             th:href="@{/}">
+            Another action
+          </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item"
+             th:href="@{/}">
+            Something else here
+          </a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="form-inline my-2 my-lg-0 border px-3">
+          <div class="logged-user"
+               text="Welcome, Gosho"></div>
+          <a class="nav-link"
+             th:href="@{/users/logout}">
+            Logout
+          </a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link"
+           th:href="@{/users/register}">
+          Register
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"
+           th:href="@{/users/login}">
+          Login
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
