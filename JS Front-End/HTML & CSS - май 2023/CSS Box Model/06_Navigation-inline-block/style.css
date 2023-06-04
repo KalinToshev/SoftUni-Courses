@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+html {
+    font-family:  Helvetica, sans-serif;
+}
+
+body {
+    padding: 0 6rem;
+}
+
+header nav {
+    padding: 2em 0;
+    border-bottom: 3px solid gray;
+    display: inline-block;
+    width: 100%;
+}
+
+header nav #site-title {
+    font-size: 2em;
+    font-weight: bold;
+    padding-right: 2em;
+    text-transform: uppercase;
+}
+
+header nav ul {
+    display: inline-block;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: green;
+    margin: 0 1em;
+}
+
+main > article > header h1 {
+    margin: 1em 0;
+}
+
+main > article > section > p {
+    margin-bottom: 1em;
+}
