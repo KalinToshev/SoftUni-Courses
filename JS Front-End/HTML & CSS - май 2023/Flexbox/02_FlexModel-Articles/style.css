@@ -1,0 +1,23 @@
+html {
+    font: 16px/1.5 Helvetica, sans-serif;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    line-height: 1.2;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    max-width: 70vw;
+    margin: 0 auto;
+}
+
+section > article {
+    margin: 1rem 2rem;
+    padding: 1rem;
+    border: 1px solid #eee;
+    box-shadow: 0 0 10px black;
+    border-radius: 0.4rem;
+}
