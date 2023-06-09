@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    padding: 2em;
+}
