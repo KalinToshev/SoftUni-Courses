@@ -1,0 +1,29 @@
+body {
+    font: 18px/1.5 Helvetica, sans-serif;
+    padding: 2rem;
+}
+
+body header {
+    border-bottom: 2px solid rgb(0,0,0);
+    display: flex;
+    justify-content: space-between;
+}
+
+header #site-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 153, 0);
+}
