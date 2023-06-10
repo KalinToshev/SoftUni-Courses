@@ -1,0 +1,45 @@
+html {
+    font: 18px/1.5 Helvetica, sans-serif;
+}
+
+body {
+    background: rgb(238, 238, 238);
+    padding: 3.5em;
+}
+
+.masonry {
+    column-count: 4;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 100%;
+    box-shadow: 0 0 1em rgb(0, 0, 0);
+    margin-bottom: 1em;
+    margin-right: 1em;
+    break-inside: avoid;
+}
+
+.card > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card > section {
+    padding: 1em;
+}
+
+.card > footer {
+    padding: 1em;
+    border-top: 4px solid rgb(160, 157, 157);
+}
+
+.cards-layout.flex .card {
+    max-width: 18em;
+}
