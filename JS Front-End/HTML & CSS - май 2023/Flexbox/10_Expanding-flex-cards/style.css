@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    gap: 2em;
+}
+
+.card {
+    width: 5em;
+    flex: 0 0 auto;
+    overflow: hidden;
+    display: flex;
+    border-radius: 0.5em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0.3);
+    transition: width 0.4s ease-in-out;
+}
+
+.card:hover {
+    width: 30em;
+}
+
+.media img {
+    display: block;
+    height: 100%;
+    width: auto;
+}
