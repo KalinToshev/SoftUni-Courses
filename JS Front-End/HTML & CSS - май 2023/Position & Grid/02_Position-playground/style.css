@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.viewport {
+    height: 100vh;
+    background-color: #eee;
+    overflow: hidden;
+    position: relative;
+}
+
+.card {
+    display: block;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.8);
+}
+
+.card img {
+    display: block;
+    width: 100%;
+}
+
+.viewport:nth-child(1) {
+    background: linear-gradient(137deg, rgba(20,116,213,1) 0%, rgba(10,227,181,1) 100%);
+}
+
+.viewport:nth-child(2) {
+    background: linear-gradient(137deg, rgba(169,61,210,1) 0%, rgba(227,170,10,1) 100%);
+}
+
+.icon {
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+}
