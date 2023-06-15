@@ -1,0 +1,33 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    display: inline-block;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+ul li a {
+    border-radius: 50%;
+    background-color: rgb(233, 234, 234);
+    padding: 1em;
+    margin: 0 0.5em;
+    color: rgb(66, 64, 64);
+}
+
+.facebook:hover {color: #3b5998;}
+
+.twitter:hover {color: #00acee;}
+
+.google-plus:hover {color: #db4a39;}
+
+.linkedin:hover {color: #0072b1;}
+
+.instagram:hover {color: rgb(228, 64, 95);}
