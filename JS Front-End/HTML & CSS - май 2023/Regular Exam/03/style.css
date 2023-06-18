@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 16px/1.5 'Inter', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.mb-1 {
+    margin-bottom: 1em;
+}
+
+header {
+    background: rgb(173, 226, 223);
+    text-align: center;
+}
+
+header nav {
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5em 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+header nav .auth-actions a {
+    text-decoration: none;
+    color: #000;
+    padding: 0.7em;
+    margin: 0 0.3em;
+}
+
+header nav .auth-actions .signup {
+    background: rgb(173, 226, 223);
+    border-radius: 0.3em;
+}
+
+header .header-content {
+    padding: 4em 0;
+}
+
+header .header-content h1 {
+    font-size: 4em;
+}
+
+header .header-content .download-actions {
+    margin-top: 3em;
+}
+
+header .header-content .download-actions a {
+    text-decoration: none;
+    background-color: #000;
+    color: white;
+    border-radius: 0.3em;
+    padding: 1em;
+}
+
+.stats {
+    margin: 6em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats .stat-box {
+    text-align: center;
+    padding: 1em;
+    min-height: 20vh;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.stats .stat-box h2 {
+    font-size: 3em;
+}
+
+.stats .stat-box p {
+    font-size: 1em;
+}
+
+.app-resume {
+    background: rgb(173, 226, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-resume .image-review {
+    border: 1px dashed gray;
+}
+
+.app-resume .text-resume {
+    padding: 0 6em;
+}
+
+.app-resume .text-resume p {
+    max-width: 33em;
+    font-size: 1.2em;
+}
+
+.app-resume .text-resume h2 {
+    font-size: 3em;
+}
+
+.app-resume .text-resume .explore-btn {
+    border-bottom: 1px solid #000;
+    width: fit-content;
+}
+
+.app-resume .text-resume .explore-btn a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.pricing-plans {
+    background: rgb(243, 245, 250);
+    padding: 1em 0 3em 0;
+}
+
+.pricing-plans .plans-button {
+    background-color: rgb(173, 226, 223);
+    margin: 0 auto;
+    padding: 0.6em;
+    border-radius: 0.3em;
+    width: fit-content;
+}
+
+.pricing-plans > h2 {
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: 1.6em;
+}
+
+.pricing-plans .plans {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border: 1px solid gray;
+    border-radius: 0.3em;
+    overflow: hidden;
+    min-height: 50vh;
+    
+}
+
+.pricing-plans .plans > .standart {
+    background-color: white;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid gray;
+}
+
+.pricing-plans .plans > .standart h3 {
+    text-align: center;
+}
+
+.pricing-plans .plans > .standart .price {
+    font-size: 3em;
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+}
+
+.pricing-plans .plans > .standart ul {
+    list-style: none;
+    margin: 1em 0;
+}
+
+.pricing-plans .plans > .standart .buy-btn {
+    text-decoration: none;
+    background: rgb(173, 226, 223);
+    padding: 1em;
+    border-radius: 0.4em;
+    color: #000;
+    text-align: center;
+}
+
+.pricing-plans .plans > .plus {
+    background-color: white;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid gray;
+}
+
+.pricing-plans .plans > .plus h3 {
+    text-align: center;
+}
+
+.pricing-plans .plans > .plus .price {
+    font-size: 3em;
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+}
+
+.pricing-plans .plans > .plus .price .month {
+    font-size: 16px;
+    color: gray;
+    margin-left: 0.5em;
+}
+
+.pricing-plans .plans > .plus ul {
+    list-style: none;
+    margin: 1em 0;
+}
+
+.pricing-plans .plans > .plus .buy-btn {
+    text-decoration: none;
+    background: rgb(173, 226, 223);
+    padding: 1em;
+    border-radius: 0.4em;
+    color: #000;
+    text-align: center;
+}
+
+.pricing-plans .plans > .premium {
+    background-color: white;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid gray;
+}
+
+.pricing-plans .plans > .premium h3 {
+    text-align: center;
+}
+
+.pricing-plans .plans > .premium .price {
+    font-size: 3em;
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+}
+
+.pricing-plans .plans > .premium .price .month {
+    font-size: 16px;
+    color: gray;
+    margin-left: 0.5em;
+}
+
+.pricing-plans .plans > .premium ul {
+    list-style: none;
+    margin: 1em 0;
+}
+
+.pricing-plans .plans > .premium .buy-btn {
+    text-decoration: none;
+    background: rgb(173, 226, 223);
+    padding: 1em;
+    border-radius: 0.4em;
+    color: #000;
+    text-align: center;
+}
+
+.pricing-plans .plans > .expand {
+    background-color: rgb(173, 226, 223);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    border-right: 1px solid gray;
+}
+
+.pricing-plans .plans > .expand h3 {
+    text-align: center;
+}
+
+.pricing-plans .plans > .expand p {
+    font-size: 1.8em;
+}
+
+.pricing-plans .plans > .expand .price {
+    font-size: 3em;
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+}
+
+.pricing-plans .plans > .expand .price .month {
+    font-size: 16px;
+    color: gray;
+    margin-left: 0.5em;
+}
+
+.pricing-plans .plans > .expand ul {
+    list-style: none;
+    margin: 1em 0;
+}
+
+.pricing-plans .plans > .expand .contact-us-btn {
+    text-decoration: none;
+    background: rgb(0, 0, 0);
+    padding: 1em;
+    border-radius: 0.4em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.get-started {
+    background-color: rgb(173, 226, 223);
+    padding: 2em 0;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.get-started h2 {
+    font-size: 3em;
+    max-width: 10em;
+    text-align: center;
+}
+
+.get-started p {
+    max-width: 30em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.get-started .download-actions a {
+    text-decoration: none;
+    background-color: #000;
+    color: white;
+    border-radius: 0.3em;
+    padding: 1em;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+footer .social-icons i {
+    margin: 0 0.5em;
+}

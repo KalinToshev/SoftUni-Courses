@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(217, 217, 217);
+    font: 16px/1.5 'Inter', sans-serif;;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+.container .card {
+    width: 25em;
+    height: auto;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.3);
+}
+
+.container .card .content,
+.container .card footer {
+    margin: 2em;
+}
+
+.container .card .content {
+    border-bottom: 1px solid #000;
+}
+
+.container .card .content .tag {
+    text-transform: uppercase;
+    color: rgb(93, 89, 89);
+    padding-bottom: 0;
+    font-weight: bold;
+}
+
+.container .card .content h1 {
+    font-weight: normal;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+
+.container .card .content p {
+    color: rgb(89, 89, 89);
+    padding-bottom: 1.5em;
+}
+
+.container .card .media img {
+    width: 100%;
+    height: 15em;
+}
+
+.container .card footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .card footer .person-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(78, 77, 77);
+}
+
+.container .card footer .person-info img {
+    height: 3.5em;
+    width: 3.5em;
+    border-radius: 50%;
+    margin-right: 0.5em;
+}
+
+.container .card footer .time-to-read {
+    color: rgb(153, 154, 161);
+}

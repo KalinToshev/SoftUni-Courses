@@ -1,0 +1,39 @@
+@media screen and (max-width: 600px) {
+    .home-hero {
+        flex-direction: column-reverse;
+    }
+
+    .home-image1 {
+        width: 100%;
+    }
+
+    .home-hero-text-container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .home-features {
+        height: auto;
+    }
+
+    .home-heading-container {
+        width: 100%;
+    }
+
+    .home-cards-container {
+        flex-direction: column;
+    }
+
+    .home-feature-card {
+        width: 100%;
+    }
+
+    .home-feature-card1, 
+    .home-feature-card2 {
+        width: 100%;
+    }
+
+    .home-stats {
+        grid-template-columns: none;
+    }
+}
