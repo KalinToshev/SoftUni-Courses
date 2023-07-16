@@ -9,7 +9,7 @@ function create(words) {
 
     div.appendChild(p);
     div.addEventListener("click", (e) => {
-      const invisibleParagraph = e.target.querySelector("p");
+      const invisibleParagraph = e.currentTarget.querySelector("p");
       invisibleParagraph.style.display = "block";
     });
 
