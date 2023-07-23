@@ -18,8 +18,8 @@ function solve() {
         busInfoBox.textContent = `Next stop ${busStopInfo.name}`;
       })
       .catch(() => {
-        departButton.disabled = false;
-        arriveButton.disabled = false;
+        departButton.disabled = true;
+        arriveButton.disabled = true;
         busInfoBox.textContent = `Error`;
       });
   }
